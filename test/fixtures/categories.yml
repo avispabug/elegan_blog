@@ -1,0 +1,75 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  order: 1
+  picture_id: 
+  $: MyString
+  rails: MyString
+  generate: MyString
+  model: MyString
+  Comment: MyString
+  commenter: MyString
+  body: MyText
+  post_id: 
+  $: MyString
+  rails: MyString
+  generate: MyString
+  model: MyString
+  Comment: MyString
+  commenter: MyString
+  body: MyText
+  post_id: 
+  $: MyString
+  rails: MyString
+  generate: MyString
+  model: MyString
+  Comment: MyString
+  commenter: MyString
+  body: MyText
+  post_id: 
+  $: MyString
+  rails: MyString
+  generate: MyString
+  model: MyString
+  Comment: MyString
+  commenter: MyString
+  body: MyText
+  post_id: 
+
+two:
+  name: MyString
+  order: 1
+  picture_id: 
+  $: MyString
+  rails: MyString
+  generate: MyString
+  model: MyString
+  Comment: MyString
+  commenter: MyString
+  body: MyText
+  post_id: 
+  $: MyString
+  rails: MyString
+  generate: MyString
+  model: MyString
+  Comment: MyString
+  commenter: MyString
+  body: MyText
+  post_id: 
+  $: MyString
+  rails: MyString
+  generate: MyString
+  model: MyString
+  Comment: MyString
+  commenter: MyString
+  body: MyText
+  post_id: 
+  $: MyString
+  rails: MyString
+  generate: MyString
+  model: MyString
+  Comment: MyString
+  commenter: MyString
+  body: MyText
+  post_id: 

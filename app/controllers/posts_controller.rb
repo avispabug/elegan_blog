@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    @categories = Category.all
   end
 
   # GET /posts/1
@@ -15,6 +16,7 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+    @categories = Category.all
   end
 
   # GET /posts/1/edit
@@ -24,8 +26,8 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
-    @comment = @post.comments.create(params[:comment].permit(:commenter, :body))
+    @post = Post.new(params[:post].permit(:title, :body, :author, :category_id))
+    #@comment = @post.comments.create(params[:comment].permit(:commenter, :body))
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }

@@ -11,13 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130824093524) do
+ActiveRecord::Schema.define(version: 20130824113344) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
     t.integer  "order"
     t.integer  "picture_id"
-    t.integer  "post_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -49,6 +48,7 @@ ActiveRecord::Schema.define(version: 20130824093524) do
     t.integer  "comment_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "category_id"
   end
 
   create_table "posts_tags", id: false, force: true do |t|

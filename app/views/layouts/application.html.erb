@@ -1,14 +1,34 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>BLOGX</title>
+  <title>Elegan İşler</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container">
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><%= link_to "Anasayfa", root_path %> </li>
+      <li><%= link_to "Kategoriler", categories_path %> </li>
+      <li><%= link_to "Yazılar", posts_path %> </li>
+
+    </ul>
+    <h3 class="text-muted">ELEGAN BLOG</h3>
+  </div>
 
 <%= yield %>
 
+<%= render "layouts/footer" %>
+
+</div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 </body>
 </html>

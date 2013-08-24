@@ -1,6 +1,5 @@
 BLOGX::Application.routes.draw do
 
-  get "admin/dashboard"
   resources :pictures
 
   resources :tags
